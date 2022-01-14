@@ -15,8 +15,14 @@ async function author_name(){
         text_space.innerHTML = current_string;
         await sleep(100);
     }
+    await sleep(200);
 
-    author_name_run = true;
+    // document.getElementById("subtitle").style.opacity = 0.5;
+    subtitle = document.getElementById("subtitle");
+    for(let i = 0; i <= 10; i ++) {
+        subtitle.style.opacity = i/10;
+        await sleep(50)
+    }
 }
 
-if(author_name_run === false) author_name();
+author_name();

@@ -1,0 +1,103 @@
+:root {
+    --main-colour: #1ba098;
+    --text-colour: #051622;
+}
+
+body {
+    margin: 0px;
+    font-family: monospace
+}
+
+.page {
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#welcome {
+    font-family: monospace;
+    font-size: xx-large;
+    background-color: var(--main-colour);
+    color: var(--text-colour);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navbar {
+    margin: 0px;
+    background-color: var(--text-colour);
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    font-size: x-large;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0;
+    height: 100%;
+    margin: 0%;
+}
+
+#navbar ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li:hover {
+    background-color: var(--main-colour);
+}
+
+#author-navbar:hover {
+    background-color: var(--text-colour);
+}
+
+
+#text-example {
+    font-size: xx-large;
+}
+
+#subtitle {
+    opacity: 0;
+}
+
+#section-2 {
+    color: white;
+    /* background-color: var(--text-colour); */
+    background: linear-gradient(to bottom, var(--main-colour) 0%, var(--text-colour) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#image-1 {
+    max-height: 40%;
+    max-width: 40%;
+    border-radius: 5%;
+    padding-left: 1%;
+}
+
+#author-description {
+    font-size: x-large;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
