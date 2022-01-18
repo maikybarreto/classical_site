@@ -109,3 +109,24 @@ body {
 #normal-text li::before {
     content: '-'
 }
+
+/* Feito utilizando a ferramenta https://grid.layoutit.com/ */
+.grid-projects {  display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img-1 center img-3"
+      "img-2 center img-4";
+  }
+  
+.center { grid-area: center; }
+
+.img-1 { grid-area: img-1; }
+
+.img-2 { grid-area: img-2; }
+
+.img-3 { grid-area: img-3; }
+
+.img-4 { grid-area: img-4; }
