@@ -47,3 +47,36 @@ async function author_name(){
 }
 
 author_name();
+
+
+function change_text_1(event) {
+    let p = document.getElementById("container-content");
+    p.innerHTML = "Imagem 1"
+}
+
+function change_text_2(event) {
+    let p = document.getElementById("container-content");
+    p.innerHTML = "Imagem 2"
+}
+
+function change_text_3(event) {
+    let p = document.getElementById("container-content");
+    p.innerHTML = "Imagem 3"
+}
+
+function change_text_4(event) {
+    let p = document.getElementById("container-content");
+    p.innerHTML = "Imagem 4"
+}
+
+let container_img_1 = document.getElementById("container-img-1");
+container_img_1.addEventListener("mouseover", change_text_1);
+
+let container_img_2 = document.getElementById("container-img-2");
+container_img_2.addEventListener("mouseover", change_text_2);
+
+let container_img_3 = document.getElementById("container-img-3");
+container_img_3.addEventListener("mouseover", change_text_3);
+
+let container_img_4 = document.getElementById("container-img-4");
+container_img_4.addEventListener("mouseover", change_text_4);

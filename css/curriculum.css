@@ -111,22 +111,40 @@ body {
 }
 
 /* Feito utilizando a ferramenta https://grid.layoutit.com/ */
-.grid-projects {  display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "img-1 center img-3"
-      "img-2 center img-4";
-  }
-  
-.center { grid-area: center; }
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 0.3fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "container-title container-title container-title"
+    "container-img-1 content container-img-3"
+    "container-img-2 content container-img-4"; 
+}
 
-.img-1 { grid-area: img-1; }
+.content { 
+    grid-area: content; 
+    font-size: large;
+}
 
-.img-2 { grid-area: img-2; }
+.content p {
+    margin: 0px;
+}
+.container-title { 
+    grid-area: container-title;
+    padding-left: 50px;
+}
+.container-img-1 { grid-area: container-img-1; }
+.container-img-2 { grid-area: container-img-2; }
+.container-img-3 { grid-area: container-img-3; }
+.container-img-4 { grid-area: container-img-4; }
 
-.img-3 { grid-area: img-3; }
+.container-img-grid {
+    max-height: 30vh;
+}
 
-.img-4 { grid-area: img-4; }
+.container-img-center-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
